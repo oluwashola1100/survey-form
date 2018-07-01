@@ -1,0 +1,60 @@
+html,
+body {
+    background-color: #7a7e7d;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.jumbotron {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+.right {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 833px) {
+    .input-field {
+        widows: 100%;
+    }
+    select {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .labels {
+        width: 100%;
+        text-align: left;
+        padding-left: 10%;
+    }
+    .right {
+        width: 80%;
+        float: center;
+    }
+    .input-field {
+        width: 100%;
+    }
+    select {
+        width: 100%;
+    }
+}

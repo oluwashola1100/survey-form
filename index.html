@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div class="jumbotron">
+        <p id="description">
+            Let us know how we can improve freeCodeCamp
+        </p>
+        <form id="survey-form">
+            <div class="row py-2">
+                <div class="labels">
+                    <label id="name-label" for="name">* Name: </label>
+                </div>
+                <div class="right">
+                    <input autofocus type="text" name="name" id="name" class="form-control form-control-lg" placeholder="Enter your name" required>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="labels">
+                    <label id="email-label" for="email">* Email: </label>
+                </div>
+                <div class="right">
+                    <input type="email" name="email" id="email" class="form-control form-control-lg" required placeholder="Enter your Email">
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="labels">
+                    <label id="number-label" for="age">* Age: </label>
+                </div>
+                <div class="right">
+                    <input type="number" name="age" id="number" min="1" max="125" class="form-control form-control-lg" placeholder="Age">
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="labels">
+                    <label for="currentPos">Which option best describes your current role?</label>
+                </div>
+                <div class="right">
+                    <select id="dropdown" name="currentPos" class="custom-select form-control-lg">
+                    <option disabled value>Select an option</option>
+                    <option  value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="labels">
+                    <label for="userRating">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                </div>
+                <div class="right">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radio-button" value="option1">
+                        <label class="form-check-label">
+                          Definitely
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radio-button" value="option2">
+                        <label class="form-check-label">
+                          Maybe
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radio-button" value="option3">
+                        <label class="form-check-label">
+                          Not Sure
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="labels">
+                    <label for="most-like">What do you like most in FCC: </label>
+                </div>
+                <div class="right">
+                    <select id="most-like" name="mostLike" class="custom-select form-control-lg">
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                  </select>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="labels">
+                    <label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+                </div>
+                <div class="right">
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="1">
+                            <label class="form-check-label">
+                                    Front-end Projects
+                                  </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="2">
+                            <label class="form-check-label">
+                                        Back-end Projects
+                                      </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="3">
+                            <label class="form-check-label">
+                                        Data Visualization
+                                      </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="4">
+                            <label class="form-check-label">
+                                        Challenges
+                                      </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="5">
+                            <label class="form-check-label">
+                                        Open-source Community
+                                      </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="6">
+                            <label class="form-check-label">
+                                        Gitters Help Room
+                                      </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="7">
+                            <label class="form-check-label">
+                                        Videos
+                                      </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="8">
+                            <label class="form-check-label">
+                                            City Meetups
+                                          </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="9">
+                            <label class="form-check-label">
+                                        Wikis
+                                      </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="10">
+                            <label class="form-check-label">
+                                        Forums
+                                      </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="11">
+                            <label class="form-check-label">
+                                            Additional Courses
+                                          </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-2">
+                <div class="labels">
+                    <label for="comments">Any Comments or Suggestions?</label>
+                </div>
+                <div class="right">
+                    <textarea id="comments" class="form-control form-control-lg" row py-2s="5" cols="5" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit" class="btn btn-lg btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
